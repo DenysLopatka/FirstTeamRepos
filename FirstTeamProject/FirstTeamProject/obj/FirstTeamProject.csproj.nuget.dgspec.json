@@ -55,6 +55,14 @@
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[3.16.1, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.5.5, )"
+            },
+            "SpecFlow.Allure": {
+              "target": "Package",
+              "version": "[3.5.0.34, )"
             }
           },
           "imports": [
