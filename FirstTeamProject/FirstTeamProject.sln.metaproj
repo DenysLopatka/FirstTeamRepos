@@ -40,6 +40,8 @@
     <CurrentSolutionConfigurationContents>
       <SolutionConfiguration xmlns="">
   <ProjectConfiguration Project="{0D51F463-AF14-49D3-9664-86978AE86095}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\FirstTeamProject.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{6F2CE454-4B81-48FA-A333-9E69826D9F51}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\NewBookModelsApiTests\NewBookModelsApiTests.csproj" BuildProjectInSolution="True">Debug|AnyCPU<ProjectDependency Project="{0D51F463-AF14-49D3-9664-86978AE86095}" /></ProjectConfiguration>
+  <ProjectConfiguration Project="{F6393731-87C6-496F-83E0-3903A1B1F100}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\SpecflowTestProjectt\SpecflowTestProject.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
 </SolutionConfiguration>
     </CurrentSolutionConfigurationContents>
     <NuGetRestoreTargets>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\..\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets</NuGetRestoreTargets>
@@ -74,6 +76,8 @@
       <Content>
         <SolutionConfiguration xmlns="">
   <ProjectConfiguration Project="{0D51F463-AF14-49D3-9664-86978AE86095}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\FirstTeamProject.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{6F2CE454-4B81-48FA-A333-9E69826D9F51}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\NewBookModelsApiTests\NewBookModelsApiTests.csproj" BuildProjectInSolution="True">Debug|AnyCPU<ProjectDependency Project="{0D51F463-AF14-49D3-9664-86978AE86095}" /></ProjectConfiguration>
+  <ProjectConfiguration Project="{F6393731-87C6-496F-83E0-3903A1B1F100}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\SpecflowTestProjectt\SpecflowTestProject.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
 </SolutionConfiguration>
       </Content>
       <Platform>Any CPU</Platform>
@@ -83,6 +87,8 @@
       <Content>
         <SolutionConfiguration xmlns="">
   <ProjectConfiguration Project="{0D51F463-AF14-49D3-9664-86978AE86095}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\FirstTeamProject.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{6F2CE454-4B81-48FA-A333-9E69826D9F51}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\NewBookModelsApiTests\NewBookModelsApiTests.csproj" BuildProjectInSolution="True">Release|AnyCPU<ProjectDependency Project="{0D51F463-AF14-49D3-9664-86978AE86095}" /></ProjectConfiguration>
+  <ProjectConfiguration Project="{F6393731-87C6-496F-83E0-3903A1B1F100}" AbsolutePath="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\SpecflowTestProjectt\SpecflowTestProject.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
 </SolutionConfiguration>
       </Content>
       <Platform>Any CPU</Platform>
@@ -91,6 +97,21 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\FirstTeamProject.csproj">
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Platform>AnyCPU</Platform>
+      <Configuration>Debug</Configuration>
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\NewBookModelsApiTests\NewBookModelsApiTests.csproj.metaproj">
+      <AdditionalProperties>Configuration=Debug; Platform=Any CPU</AdditionalProperties>
+      <Platform>AnyCPU</Platform>
+      <Configuration>Debug</Configuration>
+      <ToolsVersion>Current</ToolsVersion>
+      <SkipNonexistentProjects>Build</SkipNonexistentProjects>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\SpecflowTestProjectt\SpecflowTestProject.csproj">
       <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
       <Platform>AnyCPU</Platform>
       <Configuration>Debug</Configuration>
@@ -324,5 +345,37 @@
   </Target>
   <Target Name="FirstTeamProject:Publish">
     <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\FirstTeamProject.csproj'" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="True" Projects="@(ProjectReference)" Targets="Publish" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NewBookModelsApiTests" Outputs="@(NewBookModelsApiTestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\NewBookModelsApiTests\NewBookModelsApiTests.csproj.metaproj'" ToolsVersion="Current" BuildInParallel="True" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" Projects="@(ProjectReference)" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NewBookModelsApiTestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NewBookModelsApiTests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\NewBookModelsApiTests\NewBookModelsApiTests.csproj.metaproj'" ToolsVersion="Current" BuildInParallel="True" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" Projects="@(ProjectReference)" Targets="Clean" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NewBookModelsApiTests:Rebuild" Outputs="@(NewBookModelsApiTestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\NewBookModelsApiTests\NewBookModelsApiTests.csproj.metaproj'" ToolsVersion="Current" BuildInParallel="True" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" Projects="@(ProjectReference)" Targets="Rebuild" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NewBookModelsApiTestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NewBookModelsApiTests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\NewBookModelsApiTests\NewBookModelsApiTests.csproj.metaproj'" ToolsVersion="Current" BuildInParallel="True" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" Projects="@(ProjectReference)" Targets="Publish" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="SpecflowTestProject" Outputs="@(SpecflowTestProjectBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\SpecflowTestProjectt\SpecflowTestProject.csproj'" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="True" Projects="@(ProjectReference)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="SpecflowTestProjectBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="SpecflowTestProject:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\SpecflowTestProjectt\SpecflowTestProject.csproj'" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="True" Projects="@(ProjectReference)" Targets="Clean" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="SpecflowTestProject:Rebuild" Outputs="@(SpecflowTestProjectBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\SpecflowTestProjectt\SpecflowTestProject.csproj'" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="True" Projects="@(ProjectReference)" Targets="Rebuild" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="SpecflowTestProjectBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="SpecflowTestProject:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\..\..\DevEducation\SpecflowTestProjectt\SpecflowTestProject.csproj'" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="True" Projects="@(ProjectReference)" Targets="Publish" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
   </Target>
 </Project>
