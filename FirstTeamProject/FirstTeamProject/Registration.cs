@@ -81,7 +81,7 @@ namespace FirstTeamProject
             System.Threading.Thread.Sleep(1000);
             _webDriver.FindElement(By.CssSelector("[type = 'submit']")).Click();        
 
-            System.Threading.Thread.Sleep(3000);            
+            System.Threading.Thread.Sleep(5000);            
 
             var url = _webDriver.Url;
 
