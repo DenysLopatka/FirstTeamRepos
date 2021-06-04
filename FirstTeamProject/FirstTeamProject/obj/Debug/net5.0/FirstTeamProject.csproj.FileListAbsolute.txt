@@ -1,3 +1,7 @@
+C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\NUnit3.TestAdapter.dll
+C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\NUnit3.TestAdapter.pdb
+C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\nunit.engine.dll
+C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\nunit.engine.api.dll
 C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\allureConfig.json
 C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\specflow.json
 C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\FirstTeamProject.deps.json
@@ -12,7 +16,3 @@ C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProje
 C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\obj\Debug\net5.0\FirstTeamProject.dll
 C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\obj\Debug\net5.0\ref\FirstTeamProject.dll
 C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\obj\Debug\net5.0\FirstTeamProject.pdb
-C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\NUnit3.TestAdapter.dll
-C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\NUnit3.TestAdapter.pdb
-C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\nunit.engine.dll
-C:\Users\Admin\Desktop\QA_Den\PROJECTS\2904Project\FirstTeamRepos\FirstTeamProject\FirstTeamProject\bin\Debug\net5.0\nunit.engine.api.dll
